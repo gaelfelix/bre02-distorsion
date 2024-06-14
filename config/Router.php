@@ -21,7 +21,7 @@ class Router {
             echo "route add-category";
         }
         else if ($route !== null && $route === 'get-category') {
-            echo "route add-category";
+            $this->cc->getCategory();
         }
         else if ($route !== null && $route === 'get-categories') {
             $this->cc->getCategories();
